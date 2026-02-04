@@ -1,0 +1,29 @@
+
+#dthemebtn{
+   margin-right: 1400px;
+   margin-top:-100px;
+   width: 100px;
+
+   
+   
+}
+#dthemebtn:hover{
+    border: 2px solid white;
+}
+#lthemebtn:hover{
+    border: 2px solid white;
+}
+
+#lthemebtn{
+margin-left: 110px;
+width: 100px;
+margin-top:-99px;
+}
+
+.lightmode{
+    background-color: rgb(104, 97, 97);
+}
+
+.darkmode{
+   background-color:  oklch(14.5% 0 0);
+}
