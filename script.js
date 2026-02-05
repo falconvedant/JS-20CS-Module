@@ -4,19 +4,27 @@ let dmImg = document.getElementById("dthemebtn");
 let lmImg = document.getElementById("lthemebtn");
 
 function premBtnClick() {
-    alert("Sorry we are still under development, this is a test page");
+  
+    prompt('Enter you credit card number:');
+    alert('Thanks!');
     console.log("PremBtn works!");
     
 }
 function primeBtnClick() {
-    alert("Sorry, we are still under development, this is test page");
-    console.log("PrimeBtn works!")
+    prompt("Enter your credit card number:"); 
+    alert('Thanks!');
+    console.log("PrimeBtn works!");
     
 }
 
 function lighMode() {
     let body = document.getElementById("bodydiv");
-   
+    let classes = body.classList;
+    if (classes.contains('lightmode')) {
+        alert("already in light mode");
+        
+    }
+   body.classList.remove('bodydiv');
     body.classList.add('lightmode');
     
 
@@ -24,7 +32,18 @@ function lighMode() {
 
 function darkMode() {
     let body = document.getElementById("bodydiv");
-    body.classList.add('darkmode');
+
+    let classes = body.classList;
+     console.log(classes);
+     if (classes.contains('bodydiv')) {
+
+         body.classList.remove('bodydiv');
+         alert("already in dark mode");
+        } else{
+        body.classList.remove('lightmode');
+
+     }
+    body.classList.add('bodydiv');
 
     
 }
